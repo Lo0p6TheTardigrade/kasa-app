@@ -1,0 +1,12 @@
+.App {
+  margin: 0 50px;
+}
+.App .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=App.css.map */
