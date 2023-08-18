@@ -1,51 +1,14 @@
 .gallery {
-  margin-top: 43px;
+  margin: 43px 50px 0 50px;
+  padding: 43px 50px 0 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: 60px;
   border-radius: 25px;
-  width: 100%;
-  @media screen and (min-width: 375px) {
-    .figure-gallery {
-      background: #fff;
-      width: 95%;
-    }
-  }
+  width: auto;
   @media screen and (min-width: 768px) {
-    .figure-gallery {
-      margin: 20px 0;
-      background: #f6f6f6;
-      width: 28.5%;
-    }
-  }
-  .figure-gallery {
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    .image-gallery {
-      object-fit: cover;
-      border-radius: 3px;
-    }
-    figcaption {
-      margin: 20px;
-      color: #f6f6f6;
-      font-family: Montserrat;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 142.6%; /* 25.668px */
-      //   height: 60px;
-    }
-    figcaption:nth-child(1),
-    figcaption:nth-child(2),
-    figcaption:nth-child(3),
-    figcaption:nth-child(4),
-    figcaption:nth-child(5),
-    figcaption:nth-child(6) {
-      position: absolute;
-      bottom: 0;
-    }
+    background: #f6f6f6;
   }
 }

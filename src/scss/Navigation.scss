@@ -1,6 +1,21 @@
-.nav-list {
-  margin: 0;
-  list-style: none;
+.header-nav {
+  margin: 45px 50px 50px 50px;
   display: flex;
-  gap: 2.8rem;
+  justify-content: space-between;
+  .App-nav {
+    display: flex;
+    flex-flow: column;
+    // justify-content: flex-end;
+    .nav-list {
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.8rem;
+      li {
+        cursor: pointer;
+      }
+    }
+  }
 }

@@ -1,24 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logement from '../datas/logements.json';
+import '../styles/Cart.css';
 
-import { logementList } from '../datas/logementList';
-import '../styles/Gallery.css';
-const Gallery = () => {
-  return (
-    <div className="gallery">
-      {logementList.map((selected) => (
+const Cart = () => {
+  const figures = [];
+
+  for (let i = 0; i < logement.length; i++) {
+    const element = logement[i];
+    figures.push(
+      <Link
+        to={`/logement/${element.id}`}
+        key={element.id}
+        className="figure-gallery">
         <figure
           className="figure-gallery"
-          key={selected.id}>
+          key={element.id}>
           <img
-            src={selected.cover}
-            alt={selected.title}
+            src={element.cover}
+            alt={element.title}
             className="image-gallery"
           />
-          <figcaption>{selected.title}</figcaption>
+          <figcaption>{element.title}</figcaption>
         </figure>
-      ))}
-    </div>
-  );
+      </Link>
+    );
+  }
+
+  return figures;
 };
 
-export default Gallery;
+export default Cart;

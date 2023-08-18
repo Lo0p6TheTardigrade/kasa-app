@@ -1,8 +1,22 @@
-.nav-list {
+.header-nav {
+  margin: 45px 50px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav .App-nav {
+  display: flex;
+  flex-flow: column;
+}
+.header-nav .App-nav .nav-list {
   margin: 0;
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 2.8rem;
+}
+.header-nav .App-nav .nav-list li {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=Navigation.css.map */

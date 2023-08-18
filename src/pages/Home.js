@@ -1,26 +1,22 @@
 import React from 'react';
-import Logo from '../components/Logo';
-import Navigation from '../components/Navigation';
+
 import Section from '../components/Section';
-import Gallery from '../components/Cart';
-import Footer from '../components/Footer';
+import Gallery from '../components/Gallery';
+// import Footer from '../components/Footer';
+// import Header from '../components/Header';
+import Layout from '../components/Layout';
 
 const Home = () => {
   return (
     <div className="App">
-      <div className="header-nav">
-        <Logo />
-        <Navigation />
-      </div>
-      <div>
+      <Layout>
         <Section />
-      </div>
-      <div>
         <Gallery />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      </Layout>
+      {/* <Header />
+      <Section />
+      <Gallery />
+      <Footer /> */}
     </div>
   );
 };

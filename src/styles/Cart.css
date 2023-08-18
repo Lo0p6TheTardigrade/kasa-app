@@ -1,0 +1,56 @@
+@media screen and (min-width: 375px) {
+  .figure-gallery {
+    background: #fff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .figure-gallery {
+    background: #f6f6f6;
+    width: 340px;
+    height: 340px;
+  }
+}
+a {
+  display: flex;
+  cursor: pointer;
+}
+a .figure-gallery {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 340px;
+  height: 340px;
+  cursor: pointer;
+}
+a .figure-gallery .image-gallery {
+  object-fit: cover;
+  border-radius: 3px;
+  width: 340px;
+  height: 340px;
+}
+a .figure-gallery figcaption {
+  margin: 20px;
+  color: #f6f6f6;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 25.668px */
+}
+a .figure-gallery figcaption:nth-child(1),
+a .figure-gallery figcaption:nth-child(2),
+a .figure-gallery figcaption:nth-child(3),
+a .figure-gallery figcaption:nth-child(4),
+a .figure-gallery figcaption:nth-child(5),
+a .figure-gallery figcaption:nth-child(6) {
+  position: absolute;
+  bottom: 0;
+}
+
+a:nth-child(19),
+a:nth-child(20) {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=Cart.css.map */

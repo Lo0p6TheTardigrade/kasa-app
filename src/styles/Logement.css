@@ -1,0 +1,47 @@
+@media screen and (min-width: 375px) {
+  .figure-gallery {
+    background: #fff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .figure-gallery {
+    background: #f6f6f6;
+    width: 340px;
+    height: 340px;
+  }
+}
+.logement .figure-gallery {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 340px;
+  height: 340px;
+  cursor: pointer;
+}
+.logement .figure-gallery .image-gallery {
+  object-fit: cover;
+  border-radius: 3px;
+  width: 340px;
+  height: 340px;
+}
+.logement .figure-gallery figcaption {
+  margin: 20px;
+  color: #f6f6f6;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 25.668px */
+}
+.logement .figure-gallery figcaption:nth-child(1),
+.logement .figure-gallery figcaption:nth-child(2),
+.logement .figure-gallery figcaption:nth-child(3),
+.logement .figure-gallery figcaption:nth-child(4),
+.logement .figure-gallery figcaption:nth-child(5),
+.logement .figure-gallery figcaption:nth-child(6) {
+  position: absolute;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=Logement.css.map */
