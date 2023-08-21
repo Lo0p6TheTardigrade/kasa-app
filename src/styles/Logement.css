@@ -29,14 +29,14 @@
 }
 @media screen and (min-width: 375px) {
   .logement .logement-content .carousel-nav {
-    height: 335px;
     width: 100%;
+    height: 335px;
   }
 }
 @media screen and (min-width: 768px) {
   .logement .logement-content .carousel-nav {
-    height: 415px;
     width: 100%;
+    height: 415px;
   }
 }
 .logement .logement-content .carousel-nav .carousel-back-and-forward {
@@ -82,14 +82,14 @@
 }
 @media screen and (min-width: 375px) {
   .logement .logement-content .figure-logement-gallery .image-logement-gallery {
-    height: 335px;
     width: 100%;
+    height: 335px;
   }
 }
 @media screen and (min-width: 768px) {
   .logement .logement-content .figure-logement-gallery .image-logement-gallery {
-    height: 415px;
     width: 100%;
+    height: 415px;
   }
 }
 

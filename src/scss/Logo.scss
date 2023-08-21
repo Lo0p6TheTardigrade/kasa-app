@@ -1,10 +1,9 @@
+@import 'partial';
 .kasa-logo {
   @media screen and (min-width: 375px) {
-    width: 145px;
-    height: 48px;
+    @include width-and-height(145px, 48px);
   }
   @media screen and (min-width: 768px) {
-    width: 210px;
-    height: 68px;
+    @include width-and-height(210px, 68px);
   }
 }

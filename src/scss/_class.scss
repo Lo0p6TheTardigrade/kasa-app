@@ -7,3 +7,12 @@
 .font-settings-white {
   @include font-settings(map-get($map-color, white-basic));
 }
+.background-red-primary {
+  background: map-get($map-color, red-primary);
+}
+.background-grey-bg {
+  background: map-get($map-color, grey-bg);
+}
+.arrow_back-down.rotate {
+  transform: rotate(180deg);
+}

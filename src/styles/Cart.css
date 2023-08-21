@@ -16,6 +16,18 @@
   font-weight: 500;
 }
 
+.background-red-primary {
+  background: #ff6060;
+}
+
+.background-grey-bg {
+  background: #f6f6f6;
+}
+
+.arrow_back-down.rotate {
+  transform: rotate(180deg);
+}
+
 a {
   display: flex;
   cursor: pointer;
@@ -69,9 +81,9 @@ a .figure-gallery .gradient-layer {
   left: 0;
 }
 a .figure-gallery figcaption {
+  margin: 20px;
   display: flex;
   align-items: center;
-  margin: 20px;
   font-size: 16px;
   line-height: 142.6%;
   z-index: 2;

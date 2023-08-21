@@ -20,6 +20,14 @@
   font-style: normal;
   font-weight: 500;
 }
+@mixin font-size-and-line-height($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+@mixin width-and-height($width, $height) {
+  width: $width;
+  height: $height;
+}
 $map-color: (
   red-primary: #ff6060,
   white-basic: #fff,

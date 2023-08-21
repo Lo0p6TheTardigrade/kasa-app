@@ -1,4 +1,5 @@
 @import 'partial';
+@import 'class';
 p {
   margin: 0;
 }
@@ -23,15 +24,10 @@ p {
         width: 80%;
       }
       #title {
-        @include font-settings(map-get($map-color, red-primary));
-        font-size: 36px;
-
-        line-height: 142.6%;
+        @include font-size-and-line-height(36px, 142.6%);
       }
       #location {
-        @include font-settings(map-get($map-color, red-primary));
-        font-size: 18px;
-        line-height: 142.6%;
+        @include font-size-and-line-height(18px, 142.6%);
       }
       #tags {
         margin: 20px 0;
@@ -50,8 +46,7 @@ p {
             width: 30%;
           }
           @media screen and (min-width: 768px) {
-            width: 115px;
-            height: 35px;
+            @include width-and-height(115px, 35px);
           }
         }
       }
@@ -82,14 +77,11 @@ p {
           order: 1;
         }
         #host-name {
-          @include font-settings(map-get($map-color, red-primary));
           text-align: right;
-          font-size: 18px;
-          line-height: 142.6%;
+          @include font-size-and-line-height(18px, 142.6%);
         }
         #host-picture {
-          width: 64px;
-          height: 64px;
+          @include width-and-height(64px, 64px);
           border-radius: 64px;
         }
       }
@@ -117,7 +109,6 @@ p {
       .equipments {
         @include flex(column);
         width: 100%;
-        // height: 290px;
         #description {
           padding: 30px 10px 20px 10px;
           border-radius: 10px;
@@ -158,12 +149,8 @@ p {
         background: map-get($map-color, red-primary);
         border-radius: 10px;
         .arrow_back-down {
-          width: 32px;
-          height: 32px;
+          @include width-and-height(32px, 32px);
           cursor: pointer;
-        }
-        .arrow_back-down.rotate {
-          transform: rotate(180deg);
         }
       }
       .description-container-name,

@@ -1,0 +1,61 @@
+.border-radius-10px {
+  border-radius: 10px;
+}
+
+.font-settings-red {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.font-settings-white {
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.background-red-primary {
+  background: #ff6060;
+}
+
+.background-grey-bg {
+  background: #f6f6f6;
+}
+
+.arrow_back-down.rotate {
+  transform: rotate(180deg);
+}
+
+.about .about-sections {
+  padding: 20px 19px 0 19px;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+.about .about-sections .about-container {
+  padding: 10px 20px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.about .about-sections .about-container .about-container-name {
+  display: flex;
+  align-items: center;
+}
+.about .about-sections .about-container .arrow_back-down {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+.about .about-sections #fiability,
+.about .about-sections #respect,
+.about .about-sections #security,
+.about .about-sections #service {
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+/*# sourceMappingURL=AboutC.css.map */

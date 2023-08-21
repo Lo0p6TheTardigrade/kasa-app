@@ -1,0 +1,31 @@
+@import 'partial';
+@import 'class';
+.about {
+  .about-sections {
+    padding: 20px 19px 0 19px;
+    @include flex(column);
+    gap: 20px;
+    .about-container {
+      padding: 10px 20px 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px;
+      .about-container-name {
+        display: flex;
+        align-items: center;
+      }
+      .arrow_back-down {
+        display: flex;
+        align-items: center;
+        @include width-and-height(32px, 32px);
+      }
+    }
+    #fiability,
+    #respect,
+    #security,
+    #service {
+      padding: 20px;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}

@@ -26,31 +26,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 25px;
+  opacity: 0.5;
+  background: #000000;
+  mix-blend-mode: darken;
   height: 223px;
   position: relative;
   top: -223px;
-  border-radius: 25px;
-  opacity: 0.5;
-  background: #000;
-  mix-blend-mode: darken;
 }
 @media screen and (min-width: 375px) {
   .section .text-section p {
     padding: 0 16px;
-    color: #fff;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
     font-size: 24px;
     line-height: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .section .text-section p {
-    color: #fff;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
     font-size: 48px;
     line-height: 142.6%;
   }

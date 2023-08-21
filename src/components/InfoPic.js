@@ -56,8 +56,16 @@ const InfoPic = (props) => {
       {selectedLogement ? (
         <div className="info-pic">
           <div className="left-section">
-            <p id="title">{selectedLogement.title}</p>
-            <p id="location">{selectedLogement.location}</p>
+            <p
+              id="title"
+              className="font-settings-red">
+              {selectedLogement.title}
+            </p>
+            <p
+              id="location"
+              className="font-settings-red">
+              {selectedLogement.location}
+            </p>
             <div id="tags">
               {selectedLogement.tags.map((tag, index) => (
                 <span
@@ -70,7 +78,11 @@ const InfoPic = (props) => {
           </div>
           <div className="right-section">
             <div id="host">
-              <p id="host-name">{selectedLogement.host.name}</p>
+              <p
+                id="host-name"
+                className="font-settings-red">
+                {selectedLogement.host.name}
+              </p>
               <img
                 id="host-picture"
                 src={selectedLogement.host.picture}

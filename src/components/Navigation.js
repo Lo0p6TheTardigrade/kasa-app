@@ -11,10 +11,10 @@ const Navigation = () => {
       role="navigation">
       <ul className="nav-list">
         <Link to="/">
-          <li>{home}</li>
+          <li className="font-settings-red">{home}</li>
         </Link>
         <Link to="/about">
-          <li>{about}</li>
+          <li className="font-settings-red">{about}</li>
         </Link>
       </ul>
     </nav>

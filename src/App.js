@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Error from './pages/Error';
 import Logement from './pages/Logement';
+import './styles/App.css';
 
 const App = () => {
   return (

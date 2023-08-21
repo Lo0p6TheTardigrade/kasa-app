@@ -14,12 +14,10 @@
       justify-content: center;
       position: absolute;
       @media screen and (min-width: 375px) {
-        height: 335px;
-        width: 100%;
+        @include width-and-height(100%, 335px);
       }
       @media screen and (min-width: 768px) {
-        height: 415px;
-        width: 100%;
+        @include width-and-height(100%, 415px);
       }
       .carousel-back-and-forward {
         padding: 0 23px;
@@ -32,12 +30,10 @@
         .nav-left,
         .nav-right {
           @media screen and (min-width: 375px) {
-            width: 15px;
-            height: 24px;
+            @include width-and-height(15px, 24px);
           }
           @media screen and (min-width: 768px) {
-            width: 46px;
-            height: 79px;
+            @include width-and-height(46px, 79px);
           }
         }
       }
@@ -59,12 +55,10 @@
       .image-logement-gallery {
         object-fit: cover;
         @media screen and (min-width: 375px) {
-          height: 335px;
-          width: 100%;
+          @include width-and-height(100%, 335px);
         }
         @media screen and (min-width: 768px) {
-          height: 415px;
-          width: 100%;
+          @include width-and-height(100%, 415px);
         }
       }
     }

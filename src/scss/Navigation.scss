@@ -24,16 +24,12 @@
         li {
           cursor: pointer;
           @media screen and (min-width: 375px) {
-            @include font-settings(map-get($map-color, red-primary));
             text-align: right;
-            font-size: 12px;
-            line-height: 142.6%;
+            @include font-size-and-line-height(12px, 142.6%);
           }
           @media screen and (min-width: 768px) {
-            @include font-settings(map-get($map-color, red-primary));
             text-align: right;
-            font-size: 24px;
-            line-height: 142.6%;
+            @include font-size-and-line-height(24px, 142.6%);
           }
         }
       }

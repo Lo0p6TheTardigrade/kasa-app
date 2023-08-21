@@ -1,3 +1,33 @@
+.border-radius-10px {
+  border-radius: 10px;
+}
+
+.font-settings-red {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.font-settings-white {
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.background-red-primary {
+  background: #ff6060;
+}
+
+.background-grey-bg {
+  background: #f6f6f6;
+}
+
+.arrow_back-down.rotate {
+  transform: rotate(180deg);
+}
+
 p {
   margin: 0;
 }
@@ -33,18 +63,10 @@ p {
   }
 }
 .logement-info .info-pic .left-section #title {
-  color: #ff6060;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
   font-size: 36px;
   line-height: 142.6%;
 }
 .logement-info .info-pic .left-section #location {
-  color: #ff6060;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
   font-size: 18px;
   line-height: 142.6%;
 }
@@ -104,10 +126,6 @@ p {
   }
 }
 .logement-info .info-pic .right-section #host #host-name {
-  color: #ff6060;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
   text-align: right;
   font-size: 18px;
   line-height: 142.6%;
@@ -187,10 +205,6 @@ p {
   width: 32px;
   height: 32px;
   cursor: pointer;
-}
-.logement-info .info-pic .end-section .description-container .arrow_back-down.rotate,
-.logement-info .info-pic .end-section .equipments-container .arrow_back-down.rotate {
-  transform: rotate(180deg);
 }
 .logement-info .info-pic .end-section .description-container-name,
 .logement-info .info-pic .end-section .equipments-container-name {
