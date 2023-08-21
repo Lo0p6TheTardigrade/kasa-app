@@ -1,14 +1,19 @@
+@import 'partial';
 .gallery {
-  margin: 43px 50px 0 50px;
-  padding: 43px 50px 0 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  border-radius: 25px;
-  width: auto;
+  @include margin-media-query-375px;
+  @include margin-media-query-768px;
+  @media screen and (min-width: 375px) {
+    margin-top: 43px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border-radius: 25px;
+    width: auto;
+  }
   @media screen and (min-width: 768px) {
-    background: #f6f6f6;
+    padding: 43px 50px 0 50px;
+    background: map-get($map-color, grey-bg);
   }
 }

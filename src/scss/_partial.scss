@@ -1,0 +1,29 @@
+@mixin margin-media-query-375px {
+  @media screen and (min-width: 375px) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+@mixin margin-media-query-768px {
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@mixin flex($direction) {
+  display: flex;
+  flex-flow: $direction;
+}
+@mixin font-settings($map-color) {
+  color: $map-color;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+}
+$map-color: (
+  red-primary: #ff6060,
+  white-basic: #fff,
+  grey-bg: #f6f6f6,
+  gradient: linear-gradient(#ffffff00, #0000009b),
+  black-basic: #000000,
+);

@@ -6,11 +6,16 @@ const Section = (props) => {
   return (
     <section className="section">
       {props.children}
-      <img
-        src={section}
-        alt="section illustrer"
-        className="img-section"
-      />
+      <div className="img-section">
+        <img
+          src={section}
+          alt="section illustrer"
+          className="img-illustration"
+        />
+      </div>
+      <div className="text-section">
+        <p>Chez vous, partout et ailleurs</p>
+      </div>
     </section>
   );
 };

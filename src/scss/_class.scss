@@ -1,0 +1,9 @@
+.border-radius-10px {
+  border-radius: 10px;
+}
+.font-settings-red {
+  @include font-settings(map-get($map-color, red-primary));
+}
+.font-settings-white {
+  @include font-settings(map-get($map-color, white-basic));
+}

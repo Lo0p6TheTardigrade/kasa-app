@@ -1,21 +1,45 @@
+@import 'partial';
 .header-nav {
-  margin: 45px 50px 50px 50px;
+  margin: 45px 0 50px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @include margin-media-query-375px;
+  @include margin-media-query-768px;
   .App-nav {
-    display: flex;
-    flex-flow: column;
-    // justify-content: flex-end;
+    @include flex(column);
     .nav-list {
       margin: 0;
       list-style: none;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 2.8rem;
-      li {
-        cursor: pointer;
+      gap: 26px;
+      @media screen and (min-width: 375px) {
       }
+      @media screen and (min-width: 768px) {
+        gap: 57px;
+      }
+      a {
+        text-decoration: none;
+        li {
+          cursor: pointer;
+          @media screen and (min-width: 375px) {
+            @include font-settings(map-get($map-color, red-primary));
+            text-align: right;
+            font-size: 12px;
+            line-height: 142.6%;
+          }
+          @media screen and (min-width: 768px) {
+            @include font-settings(map-get($map-color, red-primary));
+            text-align: right;
+            font-size: 24px;
+            line-height: 142.6%;
+          }
+        }
+      }
+      // &::after {
+      //   content: '';
+      // }
     }
   }
 }

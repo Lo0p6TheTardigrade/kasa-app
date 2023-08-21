@@ -1,7 +1,7 @@
+@import 'partial';
 .footer {
   margin-top: 50px;
-  display: flex;
-  flex-flow: column;
+  @include flex(column);
   justify-content: center;
   align-items: center;
   gap: 28px;

@@ -21,7 +21,8 @@ const Cart = () => {
             alt={element.title}
             className="image-gallery"
           />
-          <figcaption>{element.title}</figcaption>
+          <div className="gradient-layer"></div>
+          <figcaption className="font-settings-white">{element.title}</figcaption>
         </figure>
       </Link>
     );
