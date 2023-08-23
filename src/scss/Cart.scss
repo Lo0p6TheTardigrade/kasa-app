@@ -41,7 +41,7 @@ a {
       margin: 20px;
       display: flex;
       align-items: center;
-      @include font-size-and-line-height(18px, 142.6%);
+      @include font-size-and-line-height(1em, 142.6%);
       z-index: 2;
     }
     figcaption:nth-child(1),

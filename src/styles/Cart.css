@@ -71,7 +71,7 @@ a .figure-gallery figcaption {
   margin: 20px;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 142.6%;
   z-index: 2;
 }
