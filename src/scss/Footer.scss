@@ -9,8 +9,17 @@
   @include width-and-height(100%, 209px);
   img {
     margin-top: 66px;
+    width: 122px;
+    @media screen and (min-width: 768px) {
+    }
   }
   .copyright {
+    margin-bottom: 58px;
     color: map-get($map-color, white-basic);
+    width: 133px;
+    @media screen and (min-width: 768px) {
+      text-align: center;
+      width: 100%;
+    }
   }
 }

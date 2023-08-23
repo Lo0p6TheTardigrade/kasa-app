@@ -30,51 +30,38 @@
 
 a {
   display: flex;
+  flex-flow: column;
   cursor: pointer;
+  width: 100%;
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  a {
+    width: 30%;
+  }
 }
 a .figure-gallery {
   margin: 0;
   display: flex;
   flex-flow: column;
   position: relative;
+  background: #fff;
   cursor: pointer;
-}
-@media screen and (min-width: 375px) {
-  a .figure-gallery {
-    background: #fff;
-    width: 100%;
-    height: 255px;
-  }
 }
 @media screen and (min-width: 768px) {
   a .figure-gallery {
     background: #f6f6f6;
-    width: 340px;
-    height: 340px;
   }
 }
 a .figure-gallery .image-gallery {
   object-fit: cover;
   border-radius: 3px;
 }
-@media screen and (min-width: 375px) {
-  a .figure-gallery .image-gallery {
-    width: 335px;
-    height: 255px;
-  }
-}
-@media screen and (min-width: 768px) {
-  a .figure-gallery .image-gallery {
-    width: 340px;
-    height: 340px;
-  }
-}
 a .figure-gallery .gradient-layer {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6078431373));
   width: 100%;
-  height: 30%;
+  height: 100%;
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -84,7 +71,7 @@ a .figure-gallery figcaption {
   margin: 20px;
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 142.6%;
   z-index: 2;
 }

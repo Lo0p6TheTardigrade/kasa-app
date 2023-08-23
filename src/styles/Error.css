@@ -1,0 +1,63 @@
+.error-container {
+  margin: 0 25px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 113px;
+}
+@media screen and (min-width: 768px) {
+  .error-container {
+    margin: 0 50px;
+    gap: 139px;
+  }
+}
+.error-container .error-title-container .error-title {
+  margin: 0;
+  font-size: 96px;
+  line-height: 142.6%;
+  color: #ff6060;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .error-container .error-title-container .error-title {
+    color: #ff6060;
+    font-size: 288px;
+    line-height: 142.6%;
+  }
+}
+.error-container .error-message-container .error-message {
+  margin: 0;
+  text-align: center;
+  color: #ff6060;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+}
+@media screen and (min-width: 768px) {
+  .error-container .error-message-container .error-message {
+    font-size: 36px;
+    line-height: 142.6%;
+  }
+}
+.error-container .error-link-container .error-link {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  text-decoration-line: underline;
+}
+@media screen and (min-width: 768px) {
+  .error-container .error-link-container .error-link {
+    font-size: 18px;
+    line-height: 142.6%;
+  }
+}
+
+/*# sourceMappingURL=Error.css.map */

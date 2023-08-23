@@ -11,9 +11,18 @@
 }
 .footer img {
   margin-top: 66px;
+  width: 122px;
 }
 .footer .copyright {
+  margin-bottom: 58px;
   color: #fff;
+  width: 133px;
+}
+@media screen and (min-width: 768px) {
+  .footer .copyright {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */

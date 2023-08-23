@@ -2,35 +2,36 @@
 @import 'class';
 a {
   display: flex;
+  flex-flow: column;
   cursor: pointer;
+  width: 100%;
   position: relative;
   z-index: 1;
+  @media screen and (min-width: 768px) {
+    width: 30%;
+  }
   .figure-gallery {
     margin: 0;
     @include flex(column);
     position: relative;
-    @media screen and (min-width: 375px) {
-      background: map-get($map-color, white-basic);
-      @include width-and-height(100%, 255px);
-    }
+    background: map-get($map-color, white-basic);
+    // @include width-and-height(100%, 255px);
     @media screen and (min-width: 768px) {
       background: map-get($map-color, grey-bg);
-      @include width-and-height(340px, 340px);
+      // @include width-and-height(340px, 340px);
     }
     cursor: pointer;
     .image-gallery {
       object-fit: cover;
       border-radius: 3px;
-      @media screen and (min-width: 375px) {
-        @include width-and-height(335px, 255px);
-      }
+      // @include width-and-height(100%, 100%);
       @media screen and (min-width: 768px) {
-        @include width-and-height(340px, 340px);
+        // @include width-and-height(340px, 340px);
       }
     }
     .gradient-layer {
       background: map-get($map-color, gradient);
-      @include width-and-height(100%, 30%);
+      @include width-and-height(100%, 100%);
       position: absolute;
       z-index: 1;
       bottom: 0;
@@ -40,7 +41,7 @@ a {
       margin: 20px;
       display: flex;
       align-items: center;
-      @include font-size-and-line-height(16px, 142.6%);
+      @include font-size-and-line-height(18px, 142.6%);
       z-index: 2;
     }
     figcaption:nth-child(1),

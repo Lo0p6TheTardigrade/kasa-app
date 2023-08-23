@@ -1,0 +1,47 @@
+@import 'partial';
+.error-container {
+  margin: 0 25px;
+  @include flex(column);
+  align-items: center;
+  gap: 113px;
+  @media screen and (min-width: 768px) {
+    margin: 0 50px;
+    gap: 139px;
+  }
+  .error-title-container {
+    .error-title {
+      margin: 0;
+      @include font-size-and-line-height(96px, 142.6%);
+      color: map-get($map-color, red-primary);
+      text-align: center;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
+      @media screen and (min-width: 768px) {
+        color: map-get($map-color, red-primary);
+        @include font-size-and-line-height(288px, 142.6%);
+      }
+    }
+  }
+  .error-message-container {
+    .error-message {
+      margin: 0;
+      text-align: center;
+      @include font-settings(map-get($map-color, red-primary));
+      @include font-size-and-line-height(18px, 142.6%);
+      @media screen and (min-width: 768px) {
+        @include font-size-and-line-height(36px, 142.6%);
+      }
+    }
+  }
+  .error-link-container {
+    .error-link {
+      @include font-settings(map-get($map-color, red-primary));
+      @include font-size-and-line-height(14px, 142.6%);
+      text-decoration-line: underline;
+      @media screen and (min-width: 768px) {
+        @include font-size-and-line-height(18px, 142.6%);
+      }
+    }
+  }
+}

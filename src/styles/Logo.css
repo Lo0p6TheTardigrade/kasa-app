@@ -1,8 +1,6 @@
-@media screen and (min-width: 375px) {
-  .kasa-logo {
-    width: 145px;
-    height: 48px;
-  }
+.kasa-logo {
+  width: 145px;
+  height: 48px;
 }
 @media screen and (min-width: 768px) {
   .kasa-logo {

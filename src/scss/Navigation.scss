@@ -9,33 +9,35 @@
   .App-nav {
     @include flex(column);
     .nav-list {
+      padding: 0;
       margin: 0;
       list-style: none;
       display: flex;
       align-items: center;
       gap: 26px;
-      @media screen and (min-width: 375px) {
-      }
       @media screen and (min-width: 768px) {
         gap: 57px;
       }
       a {
         text-decoration: none;
+        text-transform: uppercase;
+        width: 68px;
+        @media screen and (min-width: 768px) {
+          text-transform: none;
+          width: 110px;
+        }
         li {
           cursor: pointer;
-          @media screen and (min-width: 375px) {
-            text-align: right;
-            @include font-size-and-line-height(12px, 142.6%);
-          }
+          text-align: center;
+          @include font-size-and-line-height(12px, 142.6%);
           @media screen and (min-width: 768px) {
-            text-align: right;
             @include font-size-and-line-height(24px, 142.6%);
           }
         }
       }
-      // &::after {
-      //   content: '';
-      // }
+      .nav-active {
+        text-decoration: underline map-get($map-color, red-primary);
+      }
     }
   }
 }

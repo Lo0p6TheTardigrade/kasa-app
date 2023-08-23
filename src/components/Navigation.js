@@ -1,21 +1,25 @@
 import React from 'react';
 
 import '../styles/Navigation.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 const Navigation = () => {
   const home = 'Accueil';
-  const about = 'A propos';
+  const about = 'A Propos';
   return (
     <nav
       className="App-nav"
       role="navigation">
       <ul className="nav-list">
-        <Link to="/">
+        <NavLink
+          to="/"
+          className={(nav) => (nav.isActive ? 'nav-active' : '')}>
           <li className="font-settings-red">{home}</li>
-        </Link>
-        <Link to="/about">
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={(nav) => (nav.isActive ? 'nav-active' : '')}>
           <li className="font-settings-red">{about}</li>
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   );

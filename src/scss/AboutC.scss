@@ -2,7 +2,7 @@
 @import 'class';
 .about {
   .about-sections {
-    padding: 20px 19px 0 19px;
+    padding: 20px 25px 0 25px;
     @include flex(column);
     gap: 20px;
     .about-container {

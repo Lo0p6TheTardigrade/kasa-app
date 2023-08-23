@@ -1,3 +1,13 @@
+.gallery {
+  margin-top: 43px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 25px;
+  width: auto;
+}
 @media screen and (min-width: 375px) {
   .gallery {
     margin-left: 25px;
@@ -10,21 +20,11 @@
     margin-right: 50px;
   }
 }
-@media screen and (min-width: 375px) {
-  .gallery {
-    margin-top: 43px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    border-radius: 25px;
-    width: auto;
-  }
-}
 @media screen and (min-width: 768px) {
   .gallery {
-    padding: 43px 50px 0 50px;
+    padding: 43px 43px 0 43px;
+    flex-flow: row wrap;
+    gap: 60px;
     background: #f6f6f6;
   }
 }

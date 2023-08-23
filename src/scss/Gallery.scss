@@ -2,18 +2,18 @@
 .gallery {
   @include margin-media-query-375px;
   @include margin-media-query-768px;
-  @media screen and (min-width: 375px) {
-    margin-top: 43px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    border-radius: 25px;
-    width: auto;
-  }
+  margin-top: 43px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 25px;
+  width: auto;
   @media screen and (min-width: 768px) {
-    padding: 43px 50px 0 50px;
+    padding: 43px 43px 0 43px;
+    flex-flow: row wrap;
+    gap: 60px;
     background: map-get($map-color, grey-bg);
   }
 }
