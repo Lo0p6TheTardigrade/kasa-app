@@ -66,11 +66,17 @@ a .figure-gallery {
 @media screen and (min-width: 768px) {
   a .figure-gallery {
     background: #f6f6f6;
+    height: 340px;
   }
 }
 a .figure-gallery .image-gallery {
   object-fit: cover;
   border-radius: 3px;
+}
+@media screen and (min-width: 768px) {
+  a .figure-gallery .image-gallery {
+    height: 340px;
+  }
 }
 a .figure-gallery .gradient-layer {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6078431373));
