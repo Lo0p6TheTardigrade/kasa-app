@@ -98,13 +98,13 @@ p {
         @include flex(column);
         width: 100%;
         #description {
-          padding: 30px 10px 20px 10px;
+          padding: 40px 20px 20px 20px;
           border-radius: 10px;
           background: map-get($map-color, grey-bg);
         }
       }
       #description,
-      .equipment-list {
+      .animation {
         color: map-get($map-color, red-primary);
         position: relative;
         bottom: 10px;
@@ -112,20 +112,24 @@ p {
       }
       .equipments {
         border-radius: 10px;
-        .equipment-list {
+        .animation {
+          background: map-get($map-color, grey-bg);
+          border-radius: 0 0 10px 10px;
           padding-left: 10px;
           display: flex;
-          align-items: center;
-          background: map-get($map-color, grey-bg);
-          height: 28px;
-        }
+          flex-flow: column;
+          justify-content: center;
+          gap: 5px;
+          .equipment-list {
+            height: 28px;
+          }
 
-        p:nth-child(2) {
-          padding-top: 25px;
-        }
-        p:last-child {
-          padding-bottom: 19px;
-          border-radius: 0 0 10px 10px;
+          p:nth-child(1) {
+            padding-top: 40px;
+          }
+          p:last-child {
+            padding-bottom: 8px;
+          }
         }
       }
       .description-container,

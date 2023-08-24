@@ -50,7 +50,8 @@ const AboutC = () => {
           {showFiability ? (
             <p
               id="fiability"
-              className="background-grey-bg font-settings-red">
+              className={`background-grey-bg font-settings-red animation ${showFiability ? 'translate' : ''}`}>
+              {' '}
               Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes
             </p>
           ) : (
@@ -71,7 +72,7 @@ const AboutC = () => {
           {showRespect ? (
             <p
               id="respect"
-              className="background-grey-bg font-settings-red">
+              className={`background-grey-bg font-settings-red animation ${showRespect ? 'translate' : ''}`}>
               La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entraînera une exclusion de notre plateforme
             </p>
           ) : (
@@ -81,18 +82,18 @@ const AboutC = () => {
         <div className="security">
           <div
             className="about-container background-red-primary"
-            onClick={toggleSecurity}>
+            onClick={toggleService}>
             <span className="about-container-name font-settings-white">Service</span>
             <img
               src={arrow}
               alt="bouton menu"
-              className={`arrow_back-down ${showSecurity ? 'rotate' : ''}`}
+              className={`arrow_back-down ${showService ? 'rotate' : ''}`}
             />
           </div>
-          {showSecurity ? (
+          {showService ? (
             <p
               id="security"
-              className="background-grey-bg font-settings-red">
+              className={`background-grey-bg font-settings-red animation ${showService ? 'translate' : ''}`}>
               La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de pertubation du voisinage entraînera une exclusion de notre plateforme
             </p>
           ) : (
@@ -102,18 +103,18 @@ const AboutC = () => {
         <div className="service">
           <div
             className="about-container background-red-primary"
-            onClick={toggleService}>
+            onClick={toggleSecurity}>
             <span className="about-container-name font-settings-white">Sécurité</span>
             <img
               src={arrow}
               alt="bouton menu"
-              className={`arrow_back-down ${showService ? 'rotate' : ''}`}
+              className={`arrow_back-down ${showSecurity ? 'rotate' : ''}`}
             />
           </div>
-          {showService ? (
+          {showSecurity ? (
             <p
               id="service"
-              className="background-grey-bg font-settings-red">
+              className={`background-grey-bg font-settings-red animation ${showSecurity ? 'translate' : ''}`}>
               La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes
             </p>
           ) : (

@@ -103,7 +103,15 @@ const InfoPic = (props) => {
                   className={`arrow_back-down ${showDescription ? 'rotate' : ''}`}
                 />
               </div>
-              {showDescription && <p id="description">{selectedLogement.description}</p>}
+              <div className={`animation ${showEquipments ? 'translate' : ''}`}>
+                {showDescription && (
+                  <p
+                    id="description"
+                    className={`animation ${showEquipments ? 'translate' : ''}`}>
+                    {selectedLogement.description}
+                  </p>
+                )}
+              </div>
             </div>
             <div className="equipments">
               <div
@@ -116,14 +124,16 @@ const InfoPic = (props) => {
                   className={`arrow_back-down ${showEquipments ? 'rotate' : ''}`}
                 />
               </div>
-              {showEquipments &&
-                selectedLogement.equipments.map((equipment, index) => (
-                  <p
-                    key={index}
-                    className="equipment-list">
-                    {equipment}
-                  </p>
-                ))}
+              <div className={`animation ${showEquipments ? 'translate' : ''}`}>
+                {showEquipments &&
+                  selectedLogement.equipments.map((equipment, index) => (
+                    <p
+                      key={index}
+                      className={`equpiment-list animation ${showEquipments ? 'translate' : ''}`}>
+                      {equipment}
+                    </p>
+                  ))}
+              </div>
             </div>
           </div>
         </div>

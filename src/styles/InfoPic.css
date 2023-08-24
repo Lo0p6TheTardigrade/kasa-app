@@ -28,6 +28,20 @@
   transform: rotate(180deg);
 }
 
+.translate {
+  animation: translate ease-in-out 60ms normal;
+}
+
+@keyframes translate {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 p {
   margin: 0;
 }
@@ -149,12 +163,12 @@ p {
 }
 .logement-info .info-pic .end-section .description #description,
 .logement-info .info-pic .end-section .equipments #description {
-  padding: 30px 10px 20px 10px;
+  padding: 40px 20px 20px 20px;
   border-radius: 10px;
   background: #f6f6f6;
 }
 .logement-info .info-pic .end-section #description,
-.logement-info .info-pic .end-section .equipment-list {
+.logement-info .info-pic .end-section .animation {
   color: #ff6060;
   position: relative;
   bottom: 10px;
@@ -163,19 +177,23 @@ p {
 .logement-info .info-pic .end-section .equipments {
   border-radius: 10px;
 }
-.logement-info .info-pic .end-section .equipments .equipment-list {
+.logement-info .info-pic .end-section .equipments .animation {
+  background: #f6f6f6;
+  border-radius: 0 0 10px 10px;
   padding-left: 10px;
   display: flex;
-  align-items: center;
-  background: #f6f6f6;
+  flex-flow: column;
+  justify-content: center;
+  gap: 5px;
+}
+.logement-info .info-pic .end-section .equipments .animation .equipment-list {
   height: 28px;
 }
-.logement-info .info-pic .end-section .equipments p:nth-child(2) {
-  padding-top: 25px;
+.logement-info .info-pic .end-section .equipments .animation p:nth-child(1) {
+  padding-top: 40px;
 }
-.logement-info .info-pic .end-section .equipments p:last-child {
-  padding-bottom: 19px;
-  border-radius: 0 0 10px 10px;
+.logement-info .info-pic .end-section .equipments .animation p:last-child {
+  padding-bottom: 8px;
 }
 .logement-info .info-pic .end-section .description-container,
 .logement-info .info-pic .end-section .equipments-container {
