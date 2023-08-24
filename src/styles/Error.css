@@ -44,6 +44,11 @@
     line-height: 142.6%;
   }
 }
+.error-container .error-link-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .error-container .error-link-container .error-link {
   color: #ff6060;
   font-family: Montserrat;
@@ -51,6 +56,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 142.6%;
+  text-align: center;
   text-decoration-line: underline;
 }
 @media screen and (min-width: 768px) {

@@ -14,7 +14,7 @@ const Section = (props) => {
         />
       </div>
       <div className="text-section">
-        <p className="font-settings-white">Chez vous, partout et ailleurs</p>
+        <h1 className="font-settings-white">Chez vous, partout et ailleurs</h1>
       </div>
     </section>
   );

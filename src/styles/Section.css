@@ -34,13 +34,13 @@
   position: relative;
   top: -223px;
 }
-.section .text-section p {
+.section .text-section h1 {
   padding: 0 16px;
   font-size: 24px;
   line-height: 100%;
 }
 @media screen and (min-width: 768px) {
-  .section .text-section p {
+  .section .text-section h1 {
     font-size: 48px;
     line-height: 142.6%;
   }
