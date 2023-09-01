@@ -1,0 +1,35 @@
+@import 'partial';
+.banner-section {
+  position: relative;
+  .banner {
+    height: 223px;
+    @include margin-media-query-375px;
+    @include margin-media-query-768px;
+    mix-blend-mode: darken;
+    background: black;
+    border-radius: 25px;
+    img {
+      border-radius: 25px;
+      object-fit: cover;
+      opacity: 0.5;
+      @include width-and-height(100%, 223px);
+    }
+  }
+  .banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin: 103.5px 0 98px;
+      padding: 0 16px;
+      position: absolute;
+      top: 0;
+      @include font-size-and-line-height(24px, 100%);
+      color: map-get($map-color, white-basic);
+      @media screen and (min-width: 768px) {
+        margin: 77.5px 0 77px;
+        @include font-size-and-line-height(48px, 142.6%);
+      }
+    }
+  }
+}

@@ -84,7 +84,6 @@ p {
       }
     }
     .end-section {
-      // height: 250px;
       @include flex(column);
       gap: 20px;
       width: 100%;

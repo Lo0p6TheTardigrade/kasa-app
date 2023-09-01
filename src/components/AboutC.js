@@ -23,18 +23,14 @@ const AboutC = () => {
   };
   return (
     <div className="about">
-      <section className="section">
-        <div className="img-section">
+      <div className="banner-section">
+        <div className="banner">
           <img
             src={section}
-            alt="section illustrer"
-            className="img-illustration"
+            alt="bannière"
           />
         </div>
-        <div className="text-section">
-          <p className="font-settings-white"></p>
-        </div>
-      </section>
+      </div>
       <div className="about-sections">
         <div className="fiability">
           <div

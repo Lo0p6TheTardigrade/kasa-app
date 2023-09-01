@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch ./src/scss/style.scss:./src/styles/style.css ./src/scss/App.scss:./src/styles/App.css ./src/scss/Logo.scss:./src/styles/Logo.css ./src/scss/Navigation.scss:./src/styles/Navigation.css ./src/scss/Header.scss:./src/styles/Header.css ./src/scss/Section.scss:./src/styles/Section.css ./src/scss/Gallery.scss:./src/styles/Gallery.css ./src/scss/Cart.scss:./src/styles/Cart.css ./src/scss/Logement.scss:./src/styles/Logement.css ./src/scss/InfoPic.scss:./src/styles/InfoPic.css ./src/scss/Footer.scss:./src/styles/Footer.css ./src/scss/AboutC.scss:./src/styles/AboutC.css ./src/scss/Error.scss:./src/styles/Error.css"
+    "sass": "sass --watch ./src/scss/style.scss:./src/styles/style.css ./src/scss/App.scss:./src/styles/App.css ./src/scss/Logo.scss:./src/styles/Logo.css ./src/scss/Navigation.scss:./src/styles/Navigation.css ./src/scss/Header.scss:./src/styles/Header.css ./src/scss/Banner.scss:./src/styles/Banner.css ./src/scss/Gallery.scss:./src/styles/Gallery.css ./src/scss/Cart.scss:./src/styles/Cart.css ./src/scss/Logement.scss:./src/styles/Logement.css ./src/scss/InfoPic.scss:./src/styles/InfoPic.css ./src/scss/Footer.scss:./src/styles/Footer.css ./src/scss/AboutC.scss:./src/styles/AboutC.css ./src/scss/Error.scss:./src/styles/Error.css"
   },
   "eslintConfig": {
     "extends": [

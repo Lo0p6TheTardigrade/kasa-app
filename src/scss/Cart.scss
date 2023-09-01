@@ -15,20 +15,16 @@ a {
     @include flex(column);
     position: relative;
     background: map-get($map-color, white-basic);
-    // @include width-and-height(100%, 255px);
     @media screen and (min-width: 768px) {
       background: map-get($map-color, grey-bg);
       height: 340px;
-      // @include width-and-height(340px, 340px);
     }
     cursor: pointer;
     .image-gallery {
       object-fit: cover;
       border-radius: 3px;
-      // @include width-and-height(100%, 100%);
       @media screen and (min-width: 768px) {
         height: 340px;
-        // @include width-and-height(340px, 340px);
       }
     }
     .gradient-layer {
